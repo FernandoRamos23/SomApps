@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar Videos</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Input */
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #4facfe;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Botón */
+        button {
+            background: #4facfe;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Descargar Videos</h1>
+        <div>
+            <form action="/DownVi/descargar" method="POST">
+                <input type="text" name="url" id="url" placeholder="Pega el link aquí">
+                <button type="submit">Descargar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
